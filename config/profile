@@ -1,0 +1,27 @@
+# ~/.profile: executed by Bourne-compatible login shells.
+
+if [ "$BASH" ]; then
+  if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+  fi
+fi
+echo -e " "
+echo -e "To connect use: 'ssh root@minecraft'"
+echo -e "List available:"
+echo -e " - host"
+echo -e " - legacy"
+echo -e " - genesis"
+echo -e " - inferno"
+echo -e " - webserv"
+echo -e " - sessionserver"
+echo -e " - xenforo2"
+echo -e " - zwebserv"
+echo -e " - wordpress"
+echo -e " - zweb-apache"
+echo -e " - portal"
+echo -e " "
+echo -e "Tunnel to use sftp: 'ssh -L 9999:minecraft:22 root@z-network.ru'"
+echo -e "Socks proxy: 'ssh -i ~/.ssh/id_rsa_znet -D 0.0.0.0:8888 root@z-network.ru'"
+echo -e "Connect to postgres: 'psql -h postgres -U postgres'"
+echo -e " "
+mesg n 2> /dev/null || true
