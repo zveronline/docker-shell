@@ -1,4 +1,4 @@
-FROM alpine:3.18
+FROM alpine:3.20
 
 ENV LANG=ru_RU.UTF-8 \
 LANGUAGE=ru_RU.UTF-8 \
