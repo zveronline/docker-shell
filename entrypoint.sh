@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 set -e
 #cp -r /config/ssh/* /root/.ssh/
 cp -r /config/host/* /etc/ssh/
