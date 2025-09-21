@@ -1,4 +1,4 @@
-FROM alpine:3.20
+FROM alpine:3.21
 
 ENV LANG=ru_RU.UTF-8 \
 LANGUAGE=ru_RU.UTF-8 \
@@ -7,7 +7,7 @@ ROOT_PASS=qwe123
 
 ADD config /config
 ADD entrypoint.sh /entrypoint.sh
-RUN apk add --update gzip curl rsync git wget screen procps bash nano openssh tzdata sudo htop ca-certificates openssl coreutils mysql-client postgresql-client python3 \
+RUN apk add --update mc gzip curl rsync git wget screen procps bash nano openssh tzdata sudo htop ca-certificates openssl coreutils mysql-client postgresql-client python3 \
 && cp /usr/share/zoneinfo/Europe/Moscow /etc/localtime \
 && echo "Europe/Moscow" > /etc/timezone \
 && apk del tzdata \
